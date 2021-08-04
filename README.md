@@ -34,6 +34,9 @@ scikit_learn 라이브러리를 활용한 머신러닝을 연습해 보았습니
 
 
 
+
+
+
       # 입력변수 정의
       X = pd.DataFrame(breast__cancer_data.data,columns= breast__cancer_data.feature_names)
 
@@ -46,6 +49,11 @@ scikit_learn 라이브러리를 활용한 머신러닝을 연습해 보았습니
  
 
 
+
+
+
+
+
       # 데이터셋 나누기
       x_train,x_test,y_train,y_test = train_test_split(X,y,test_size=0.2 ,random_state=5)
       
@@ -56,7 +64,14 @@ scikit_learn 라이브러리를 활용한 머신러닝을 연습해 보았습니
  
  random_state 파라미터는 머신러닝을 진행할때마다 랜덤으로 테스트데이터와 학습데이터를 나누기 때문에 두 데이터가 계속 바뀌게 됩니다.
  이를 막기위해 임의의 숫자를 적어놓으면 매번 동일한 테스트데이터와 학습데이터를 사용할 수 있습니다.
-      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
       # 모델 만들기
       model = LogisticRegression(solver='saga',max_iter= 2000)
@@ -71,6 +86,12 @@ scikit_learn 라이브러리를 활용한 머신러닝을 연습해 보았습니
  모델에 입력변수와 목표변수의 학습데이터를 적용합니다.
  
  ※ y_train = y_train.values.ravel()은 경고문구를 막기위해 작성한 코드입니다.※
+ 
+ 
+ 
+ 
+ 
+ 
 
 
       # 모델의 정확도 
