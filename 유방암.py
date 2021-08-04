@@ -14,7 +14,6 @@ X = pd.DataFrame(breast__cancer_data.data,columns= breast__cancer_data.feature_n
 
 # 목표변수 정의
 y = pd.DataFrame(breast__cancer_data.target,columns=['class'])
-print(y)
 
 # 데이터셋 나누기
 x_train,x_test,y_train,y_test = train_test_split(X,y,test_size=0.2 ,random_state=5)
