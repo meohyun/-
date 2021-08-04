@@ -18,11 +18,18 @@ scikit_learn 라이브러리를 활용한 머신러닝을 연습해 보았습니
  4. scikit_learn 모델중 로지스틱 회귀모델을 사용합니다.
 
 
-데이터셋의 정보를 살펴봅시다. 
 
-      
+
+      breast__cancer_data = load_breast_cancer()
+
+      # 데이터 정보 보기
+      # WDBC-Malignant -> 악성, WDBC-Benign -> 양성 두가지로 분류
       print(breast__cancer_data.DESCR)
 
-  
+load_breast_cancer 함수로 유방암 진단 데이터셋을 가져오고
+breast_cancer_data 변수에 저장합니다.
+DESCR을 이용하여 데이터셋의 정보를 볼 수 있습니다. 이 데이터셋은 유방암을 악성,양성 둘중 하나로 분류하는 데이터셋입니다.
+따라서 분류를 해야 하므로 로지스틱 회귀 모델이 적절하다고 볼 수 있습니다.
+
       
   
