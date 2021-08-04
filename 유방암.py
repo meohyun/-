@@ -6,9 +6,7 @@ from sklearn.linear_model import LogisticRegression
 breast__cancer_data = load_breast_cancer()
 
 # 데이터 정보 보기
-# print(breast__cancer_data.DESCR)
 # WDBC-Malignant -> 악성, WDBC-Benign -> 양성 두가지로 분류
-
 print(breast__cancer_data.DESCR)
 
 # 입력변수 정의
