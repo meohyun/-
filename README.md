@@ -20,11 +20,11 @@ scikit_learn 라이브러리를 활용한 머신러닝을 연습해 보았습니
 
 
 
-            breast__cancer_data = load_breast_cancer()
+        breast__cancer_data = load_breast_cancer()
 
-            # 데이터 정보 보기
-            # WDBC-Malignant -> 악성, WDBC-Benign -> 양성 두가지로 분류
-            print(breast__cancer_data.DESCR)
+        # 데이터 정보 보기
+        # WDBC-Malignant -> 악성, WDBC-Benign -> 양성 두가지로 분류
+        print(breast__cancer_data.DESCR)
             
 
 load_breast_cancer 함수로 유방암 진단 데이터셋을 가져오고
